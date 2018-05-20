@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class ProcessingContext {
     private Map<Employee, List<Employee>> graph;
-    private List<Employee> topologicalSortedEmployees;
+    private List<Employee> topologicallySortedEmployees;
     private List<Employee> employees;
     private List<Long> managerIds;
 
@@ -27,12 +27,12 @@ public class ProcessingContext {
         this.graph = graph;
     }
 
-    public List<Employee> getTopologicalSortedEmployees() {
-        return topologicalSortedEmployees;
+    public List<Employee> getTopologicallySortedEmployees() {
+        return topologicallySortedEmployees;
     }
 
-    public void setTopologicalSortedEmployees(List<Employee> topologicalSortedEmployees) {
-        this.topologicalSortedEmployees = topologicalSortedEmployees;
+    public void setTopologicallySortedEmployees(List<Employee> topologicallySortedEmployees) {
+        this.topologicallySortedEmployees = topologicallySortedEmployees;
     }
 
     public List<Long> getManagerIds() {

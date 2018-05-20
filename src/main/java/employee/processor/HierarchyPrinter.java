@@ -6,7 +6,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
+/**
+ * Processes topologically sorted {@link Employee} list and prints hierarchy
+ */
 public class HierarchyPrinter implements Processor {
 
     private ProcessingContext processingContext;
@@ -18,7 +20,7 @@ public class HierarchyPrinter implements Processor {
 
     @Override
     public void process() {
-        List<Employee> employees = processingContext.getTopologicalSortedEmployees();
+        List<Employee> employees = processingContext.getTopologicallySortedEmployees();
         hierarchy = new HashMap<>();
 
         for (Employee employee : employees) {

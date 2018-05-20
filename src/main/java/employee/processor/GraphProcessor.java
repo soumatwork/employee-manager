@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Performs topological sort on the graph
+ * Performs topological sort and updates {@link ProcessingContext} with the result.
  */
 public class GraphProcessor implements Processor {
 
@@ -26,7 +26,7 @@ public class GraphProcessor implements Processor {
                 visit(graph, manager, visited);
             }
         }
-        processingContext.setTopologicalSortedEmployees(visited);
+        processingContext.setTopologicallySortedEmployees(visited);
     }
 
     private void visit(Map<Employee, List<Employee>> graph, Employee manager, List<Employee> visited) {

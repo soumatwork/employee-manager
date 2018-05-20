@@ -5,9 +5,14 @@ import java.io.File;
 public class Tester {
 
     public static void main(String[] args) throws Exception {
-        EmployeeParser employeeParser = new EmployeeParser();
-        employeeParser
-                .parse(new File("/Users/soum/git/employee-manager/src/main/resources/data.csv"));
+        if (args != null && args.length > 0) {
+            EmployeeParser employeeParser = new EmployeeParser();
+            employeeParser
+                    .parse(new File(args[0]));
+        } else {
+            System.out.println("Usage: java -jar employee-1.0-SNAPSHOT.jar <file path> ");
+            System.out.println("e.g java -jar employee-1.0-SNAPSHOT.jar ./classes/data.csv ");
+        }
 
     }
 }

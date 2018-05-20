@@ -2,12 +2,15 @@ package employee.model;
 
 import java.util.Objects;
 
-
 public class Employee {
     private long id;
     private String name;
 
     private Employee manager;
+
+    /**
+     * temporarilyMarked and marked are used to check cycle in DAG (directed acyclic graph)
+     */
     private boolean temporarilyMarked;
     private boolean marked;
 

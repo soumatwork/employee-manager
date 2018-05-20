@@ -10,6 +10,9 @@ import java.io.Reader;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Parses employee records from CSV, creates Employee object and invokes processors to process and print hierarchy.
+ */
 public class EmployeeParser {
 
     private List<Employee> employees;
@@ -37,6 +40,11 @@ public class EmployeeParser {
         processors.add(new HierarchyPrinter(this.processingContext));
     }
 
+    /**
+     * Parses csv file with Employee and Manager information.
+     *
+     * @param file
+     */
     public void parse(File file) {
 
         try (Reader reader = new FileReader(file);
@@ -53,6 +61,9 @@ public class EmployeeParser {
 
     }
 
+    /**
+     * Invokes processors to process the list of employees and managers and print hierarchy.
+     */
     private void invokeProcessors() {
         for (Processor processor : this.processors) {
             processor.process();

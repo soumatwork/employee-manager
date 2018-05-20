@@ -41,7 +41,7 @@ public class HierarchyPrinterTest {
         employeeList.add(jamie);
         employeeList.add(alan);
         employeeList.add(martin);
-        processingContext.setTopologicalSortedEmployees(employeeList);
+        processingContext.setTopologicallySortedEmployees(employeeList);
 
         HierarchyPrinter hierarchyPrinter = new HierarchyPrinter(processingContext);
         hierarchyPrinter.process();

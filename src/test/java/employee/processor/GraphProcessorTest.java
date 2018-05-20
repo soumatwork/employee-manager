@@ -48,7 +48,7 @@ public class GraphProcessorTest {
         GraphProcessor graphProcessor = new GraphProcessor(processingContext);
         graphProcessor.process();
 
-        List<Employee> employeeList = processingContext.getTopologicalSortedEmployees();
+        List<Employee> employeeList = processingContext.getTopologicallySortedEmployees();
         assertEquals(jamie, employeeList.get(0));
         assertEquals(alan, employeeList.get(1));
         assertEquals(martin, employeeList.get(2));

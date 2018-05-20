@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
- * Creates graph from employee list
+ * Creates directed acyclic graph (DAG) from {@link Employee} list as adjacency list.
  */
 public class GraphCreator implements Processor {
 
