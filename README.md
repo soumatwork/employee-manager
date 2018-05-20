@@ -10,7 +10,7 @@ printing hierarchy was delegated to individual processors (`Processor`). The ind
 a context (`ProcessingContext`) and updates it with the result. `HierarchyPrinter`, which is the last processor in 
 the processor chain, prints the hierarchy.
 
-The general concept of identifying hierarchy was based on converting employee list into a DAG (directed acyclic graph)
+The concept of identifying hierarchy was based on converting employee list into a DAG (directed acyclic graph)
 and sorting it topologically based on depth first search algorithm. The reversed topologically sorted employee list 
 will have CEO at the top and the ordered hierarchy thereafter.    
 
