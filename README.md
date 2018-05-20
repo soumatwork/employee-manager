@@ -25,7 +25,7 @@ will have CEO at the top and the ordered hierarchy thereafter.
 - `Processor`
 
 ### Instructions to execute
-- Download source files from [git repo](https://github.com/soumatwork/employee-manager)
+- Download source files from [git repo](https://github.com/soumatwork/employee-manager.git)
 - Ensure java 8 is installed
 - Install maven if not installed already [Maven](https://maven.apache.org/install.html)
 - Run 'mvn install'
