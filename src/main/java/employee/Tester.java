@@ -10,8 +10,8 @@ public class Tester {
             employeeParser
                     .parse(new File(args[0]));
         } else {
-            System.out.println("Usage: java -jar employee-1.0-SNAPSHOT.jar <file path> ");
-            System.out.println("e.g java -jar employee-1.0-SNAPSHOT.jar ./classes/data.csv ");
+            System.out.println("Usage: java -classpath <jar-file> employee.Tester <file path> ");
+            System.out.println("e.g java -classpath employee-1.0-SNAPSHOT.jar employee.Tester ./classes/data.csv ");
         }
 
     }
